@@ -121,7 +121,7 @@ public:
 
     void retranslateUi(QMainWindow *MainWindow)
     {
-        MainWindow->setWindowTitle(QApplication::translate("MainWindow", "MainWindow", Q_NULLPTR));
+        MainWindow->setWindowTitle(QApplication::translate("MainWindow", "PP\342\200\224\342\200\224\350\256\251\346\210\221\344\273\254\347\232\204\350\267\235\347\246\273\346\233\264\350\277\221", Q_NULLPTR));
         label->setText(QApplication::translate("MainWindow", "\350\264\246\345\217\267\357\274\232", Q_NULLPTR));
         label_2->setText(QApplication::translate("MainWindow", "\345\257\206\347\240\201\357\274\232", Q_NULLPTR));
         LoginButton->setText(QApplication::translate("MainWindow", "Login", Q_NULLPTR));

@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/server_system.dir/ClioneData.cpp.obj"
+  "CMakeFiles/server_system.dir/MssPrss.cpp.obj"
   "CMakeFiles/server_system.dir/serve.cpp.obj"
   "libserver_system.dll.a"
   "server_system.exe"

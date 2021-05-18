@@ -1,0 +1,12 @@
+INPUT(
+./release\main.o
+./release\mainwindow.o
+./release\networksocket.o
+./release\commutewindow.o
+./release\commutewindow.o
+./release\cw.o
+./release\moc_mainwindow.o
+./release\moc_networksocket.o
+./release\moc_commutewindow.o
+./release\moc_cw.o
+);

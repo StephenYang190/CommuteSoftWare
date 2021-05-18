@@ -2,6 +2,7 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include <networksocket.h>
 
 namespace Ui {
 class MainWindow;
@@ -20,6 +21,8 @@ private slots:
 
 private:
     Ui::MainWindow *ui;
+    NetworkSocket socket;
+
 };
 
 #endif // MAINWINDOW_H

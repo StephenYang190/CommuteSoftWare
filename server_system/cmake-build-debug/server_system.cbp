@@ -80,6 +80,18 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="D:/code/CommuteSoftWare/server_system/ClioneData.cpp">
+			<Option target="server_system"/>
+		</Unit>
+		<Unit filename="D:/code/CommuteSoftWare/server_system/ClioneData.h">
+			<Option target="server_system"/>
+		</Unit>
+		<Unit filename="D:/code/CommuteSoftWare/server_system/MssPrss.cpp">
+			<Option target="server_system"/>
+		</Unit>
+		<Unit filename="D:/code/CommuteSoftWare/server_system/MssPrss.h">
+			<Option target="server_system"/>
+		</Unit>
 		<Unit filename="D:/code/CommuteSoftWare/server_system/serve.cpp">
 			<Option target="server_system"/>
 		</Unit>

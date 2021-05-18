@@ -211,6 +211,7 @@ Makefile: ../qqclient/qqclient.pro ../../../../ruanjian/Qt/Qt5.9.0/5.9/mingw53_3
 		../../../../ruanjian/Qt/Qt5.9.0/5.9/mingw53_32/mkspecs/features/qt_config.prf \
 		../../../../ruanjian/Qt/Qt5.9.0/5.9/mingw53_32/mkspecs/win32-g++/qmake.conf \
 		../../../../ruanjian/Qt/Qt5.9.0/5.9/mingw53_32/mkspecs/features/spec_post.prf \
+		.qmake.stash \
 		../../../../ruanjian/Qt/Qt5.9.0/5.9/mingw53_32/mkspecs/features/exclusive_builds.prf \
 		../../../../ruanjian/Qt/Qt5.9.0/5.9/mingw53_32/mkspecs/features/toolchain.prf \
 		../../../../ruanjian/Qt/Qt5.9.0/5.9/mingw53_32/mkspecs/features/default_pre.prf \
@@ -388,6 +389,7 @@ Makefile: ../qqclient/qqclient.pro ../../../../ruanjian/Qt/Qt5.9.0/5.9/mingw53_3
 ../../../../ruanjian/Qt/Qt5.9.0/5.9/mingw53_32/mkspecs/features/qt_config.prf:
 ../../../../ruanjian/Qt/Qt5.9.0/5.9/mingw53_32/mkspecs/win32-g++/qmake.conf:
 ../../../../ruanjian/Qt/Qt5.9.0/5.9/mingw53_32/mkspecs/features/spec_post.prf:
+.qmake.stash:
 ../../../../ruanjian/Qt/Qt5.9.0/5.9/mingw53_32/mkspecs/features/exclusive_builds.prf:
 ../../../../ruanjian/Qt/Qt5.9.0/5.9/mingw53_32/mkspecs/features/toolchain.prf:
 ../../../../ruanjian/Qt/Qt5.9.0/5.9/mingw53_32/mkspecs/features/default_pre.prf:

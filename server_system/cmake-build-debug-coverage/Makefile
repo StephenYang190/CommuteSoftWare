@@ -142,6 +142,60 @@ server_system/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\server_system.dir\build.make CMakeFiles/server_system.dir/build
 .PHONY : server_system/fast
 
+MssPrss.obj: MssPrss.cpp.obj
+
+.PHONY : MssPrss.obj
+
+# target to build an object file
+MssPrss.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\server_system.dir\build.make CMakeFiles/server_system.dir/MssPrss.cpp.obj
+.PHONY : MssPrss.cpp.obj
+
+MssPrss.i: MssPrss.cpp.i
+
+.PHONY : MssPrss.i
+
+# target to preprocess a source file
+MssPrss.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\server_system.dir\build.make CMakeFiles/server_system.dir/MssPrss.cpp.i
+.PHONY : MssPrss.cpp.i
+
+MssPrss.s: MssPrss.cpp.s
+
+.PHONY : MssPrss.s
+
+# target to generate assembly for a file
+MssPrss.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\server_system.dir\build.make CMakeFiles/server_system.dir/MssPrss.cpp.s
+.PHONY : MssPrss.cpp.s
+
+ServerData.obj: ServerData.cpp.obj
+
+.PHONY : ServerData.obj
+
+# target to build an object file
+ServerData.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\server_system.dir\build.make CMakeFiles/server_system.dir/ServerData.cpp.obj
+.PHONY : ServerData.cpp.obj
+
+ServerData.i: ServerData.cpp.i
+
+.PHONY : ServerData.i
+
+# target to preprocess a source file
+ServerData.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\server_system.dir\build.make CMakeFiles/server_system.dir/ServerData.cpp.i
+.PHONY : ServerData.cpp.i
+
+ServerData.s: ServerData.cpp.s
+
+.PHONY : ServerData.s
+
+# target to generate assembly for a file
+ServerData.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\server_system.dir\build.make CMakeFiles/server_system.dir/ServerData.cpp.s
+.PHONY : ServerData.cpp.s
+
 serve.obj: serve.cpp.obj
 
 .PHONY : serve.obj
@@ -178,6 +232,12 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... server_system
+	@echo ... MssPrss.obj
+	@echo ... MssPrss.i
+	@echo ... MssPrss.s
+	@echo ... ServerData.obj
+	@echo ... ServerData.i
+	@echo ... ServerData.s
 	@echo ... serve.obj
 	@echo ... serve.i
 	@echo ... serve.s

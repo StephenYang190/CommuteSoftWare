@@ -4,6 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "D:/code/CommuteSoftWare/server_system/MssPrss.cpp" "D:/code/CommuteSoftWare/server_system/cmake-build-debug-coverage/CMakeFiles/server_system.dir/MssPrss.cpp.obj"
+  "D:/code/CommuteSoftWare/server_system/ServerData.cpp" "D:/code/CommuteSoftWare/server_system/cmake-build-debug-coverage/CMakeFiles/server_system.dir/ServerData.cpp.obj"
   "D:/code/CommuteSoftWare/server_system/serve.cpp" "D:/code/CommuteSoftWare/server_system/cmake-build-debug-coverage/CMakeFiles/server_system.dir/serve.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

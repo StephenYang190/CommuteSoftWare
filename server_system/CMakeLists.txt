@@ -5,4 +5,4 @@ set(CMAKE_CXX_STANDARD 14)
 
 link_libraries(ws2_32 wsock32)
 
-add_executable(server_system serve.cpp)
+add_executable(server_system serve.cpp ClioneData.h ClioneData.cpp MssPrss.cpp MssPrss.h)
