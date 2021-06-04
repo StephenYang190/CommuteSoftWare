@@ -2,11 +2,13 @@ INPUT(
 ./debug\main.o
 ./debug\mainwindow.o
 ./debug\networksocket.o
-./debug\commutewindow.o
-./debug\commutewindow.o
 ./debug\cw.o
+./debug\message.o
+./debug\chatwindow.o
+./debug\errorshow.o
 ./debug\moc_mainwindow.o
 ./debug\moc_networksocket.o
-./debug\moc_commutewindow.o
 ./debug\moc_cw.o
+./debug\moc_chatwindow.o
+./debug\moc_errorshow.o
 );

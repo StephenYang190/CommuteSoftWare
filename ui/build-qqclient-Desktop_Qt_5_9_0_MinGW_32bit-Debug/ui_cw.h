@@ -15,11 +15,11 @@
 #include <QtWidgets/QButtonGroup>
 #include <QtWidgets/QHBoxLayout>
 #include <QtWidgets/QHeaderView>
+#include <QtWidgets/QLabel>
 #include <QtWidgets/QLineEdit>
 #include <QtWidgets/QListWidget>
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QMenuBar>
-#include <QtWidgets/QPlainTextEdit>
 #include <QtWidgets/QStatusBar>
 #include <QtWidgets/QVBoxLayout>
 #include <QtWidgets/QWidget>
@@ -30,12 +30,12 @@ class Ui_Cw
 {
 public:
     QWidget *centralwidget;
-    QWidget *horizontalLayoutWidget;
-    QHBoxLayout *horizontalLayout;
-    QListWidget *frilist;
+    QWidget *verticalLayoutWidget;
     QVBoxLayout *verticalLayout;
-    QPlainTextEdit *mssview;
-    QLineEdit *msssend;
+    QHBoxLayout *horizontalLayout;
+    QLabel *personalID;
+    QLineEdit *SendF;
+    QListWidget *frilist;
     QMenuBar *menubar;
     QStatusBar *statusbar;
 
@@ -43,39 +43,39 @@ public:
     {
         if (Cw->objectName().isEmpty())
             Cw->setObjectName(QStringLiteral("Cw"));
-        Cw->resize(640, 480);
+        Cw->resize(281, 516);
         centralwidget = new QWidget(Cw);
         centralwidget->setObjectName(QStringLiteral("centralwidget"));
-        horizontalLayoutWidget = new QWidget(centralwidget);
-        horizontalLayoutWidget->setObjectName(QStringLiteral("horizontalLayoutWidget"));
-        horizontalLayoutWidget->setGeometry(QRect(0, 0, 641, 431));
-        horizontalLayout = new QHBoxLayout(horizontalLayoutWidget);
+        verticalLayoutWidget = new QWidget(centralwidget);
+        verticalLayoutWidget->setObjectName(QStringLiteral("verticalLayoutWidget"));
+        verticalLayoutWidget->setGeometry(QRect(0, 0, 281, 471));
+        verticalLayout = new QVBoxLayout(verticalLayoutWidget);
+        verticalLayout->setObjectName(QStringLiteral("verticalLayout"));
+        verticalLayout->setContentsMargins(0, 0, 0, 0);
+        horizontalLayout = new QHBoxLayout();
         horizontalLayout->setObjectName(QStringLiteral("horizontalLayout"));
-        horizontalLayout->setContentsMargins(0, 0, 0, 0);
-        frilist = new QListWidget(horizontalLayoutWidget);
+        personalID = new QLabel(verticalLayoutWidget);
+        personalID->setObjectName(QStringLiteral("personalID"));
+
+        horizontalLayout->addWidget(personalID);
+
+        SendF = new QLineEdit(verticalLayoutWidget);
+        SendF->setObjectName(QStringLiteral("SendF"));
+
+        horizontalLayout->addWidget(SendF);
+
+
+        verticalLayout->addLayout(horizontalLayout);
+
+        frilist = new QListWidget(verticalLayoutWidget);
         frilist->setObjectName(QStringLiteral("frilist"));
 
-        horizontalLayout->addWidget(frilist);
-
-        verticalLayout = new QVBoxLayout();
-        verticalLayout->setObjectName(QStringLiteral("verticalLayout"));
-        mssview = new QPlainTextEdit(horizontalLayoutWidget);
-        mssview->setObjectName(QStringLiteral("mssview"));
-
-        verticalLayout->addWidget(mssview);
-
-        msssend = new QLineEdit(horizontalLayoutWidget);
-        msssend->setObjectName(QStringLiteral("msssend"));
-
-        verticalLayout->addWidget(msssend);
-
-
-        horizontalLayout->addLayout(verticalLayout);
+        verticalLayout->addWidget(frilist);
 
         Cw->setCentralWidget(centralwidget);
         menubar = new QMenuBar(Cw);
         menubar->setObjectName(QStringLiteral("menubar"));
-        menubar->setGeometry(QRect(0, 0, 640, 23));
+        menubar->setGeometry(QRect(0, 0, 281, 23));
         Cw->setMenuBar(menubar);
         statusbar = new QStatusBar(Cw);
         statusbar->setObjectName(QStringLiteral("statusbar"));
@@ -88,7 +88,8 @@ public:
 
     void retranslateUi(QMainWindow *Cw)
     {
-        Cw->setWindowTitle(QApplication::translate("Cw", "MainWindow", Q_NULLPTR));
+        Cw->setWindowTitle(QApplication::translate("Cw", "PP", Q_NULLPTR));
+        personalID->setText(QApplication::translate("Cw", "TextLabel", Q_NULLPTR));
     } // retranslateUi
 
 };

@@ -1,0 +1,191 @@
+{
+	"BUILD_DIR" : "D:/code/CommuteSoftWare/ui/cmake-build-debug/ui_autogen",
+	"CMAKE_BINARY_DIR" : "D:/code/CommuteSoftWare/ui/cmake-build-debug",
+	"CMAKE_CURRENT_BINARY_DIR" : "D:/code/CommuteSoftWare/ui/cmake-build-debug",
+	"CMAKE_CURRENT_SOURCE_DIR" : "D:/code/CommuteSoftWare/ui",
+	"CMAKE_EXECUTABLE" : "C:/Program Files/JetBrains/CLion 2020.3.3/bin/cmake/win/bin/cmake.exe",
+	"CMAKE_LIST_FILES" : 
+	[
+		"D:/code/CommuteSoftWare/ui/CMakeLists.txt",
+		"D:/code/CommuteSoftWare/ui/cmake-build-debug/CMakeFiles/3.17.5/CMakeSystem.cmake",
+		"C:/Program Files/JetBrains/CLion 2020.3.3/bin/cmake/win/share/cmake-3.17/Modules/CMakeSystemSpecificInitialize.cmake",
+		"D:/code/CommuteSoftWare/ui/cmake-build-debug/CMakeFiles/3.17.5/CMakeCCompiler.cmake",
+		"D:/code/CommuteSoftWare/ui/cmake-build-debug/CMakeFiles/3.17.5/CMakeCXXCompiler.cmake",
+		"C:/Program Files/JetBrains/CLion 2020.3.3/bin/cmake/win/share/cmake-3.17/Modules/CMakeSystemSpecificInformation.cmake",
+		"C:/Program Files/JetBrains/CLion 2020.3.3/bin/cmake/win/share/cmake-3.17/Modules/CMakeGenericSystem.cmake",
+		"C:/Program Files/JetBrains/CLion 2020.3.3/bin/cmake/win/share/cmake-3.17/Modules/CMakeInitializeConfigs.cmake",
+		"C:/Program Files/JetBrains/CLion 2020.3.3/bin/cmake/win/share/cmake-3.17/Modules/Platform/Windows.cmake",
+		"C:/Program Files/JetBrains/CLion 2020.3.3/bin/cmake/win/share/cmake-3.17/Modules/Platform/WindowsPaths.cmake",
+		"C:/Program Files/JetBrains/CLion 2020.3.3/bin/cmake/win/share/cmake-3.17/Modules/CMakeFindCodeBlocks.cmake",
+		"C:/Program Files/JetBrains/CLion 2020.3.3/bin/cmake/win/share/cmake-3.17/Modules/CMakeExtraGeneratorDetermineCompilerMacrosAndIncludeDirs.cmake",
+		"C:/Program Files/JetBrains/CLion 2020.3.3/bin/cmake/win/share/cmake-3.17/Modules/ProcessorCount.cmake",
+		"C:/Program Files/JetBrains/CLion 2020.3.3/bin/cmake/win/share/cmake-3.17/Modules/CMakeCInformation.cmake",
+		"C:/Program Files/JetBrains/CLion 2020.3.3/bin/cmake/win/share/cmake-3.17/Modules/CMakeLanguageInformation.cmake",
+		"C:/Program Files/JetBrains/CLion 2020.3.3/bin/cmake/win/share/cmake-3.17/Modules/Compiler/GNU-C.cmake",
+		"C:/Program Files/JetBrains/CLion 2020.3.3/bin/cmake/win/share/cmake-3.17/Modules/Compiler/GNU.cmake",
+		"C:/Program Files/JetBrains/CLion 2020.3.3/bin/cmake/win/share/cmake-3.17/Modules/Compiler/CMakeCommonCompilerMacros.cmake",
+		"C:/Program Files/JetBrains/CLion 2020.3.3/bin/cmake/win/share/cmake-3.17/Modules/Internal/CMakeCheckCompilerFlag.cmake",
+		"C:/Program Files/JetBrains/CLion 2020.3.3/bin/cmake/win/share/cmake-3.17/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake",
+		"C:/Program Files/JetBrains/CLion 2020.3.3/bin/cmake/win/share/cmake-3.17/Modules/Platform/Windows-GNU-C.cmake",
+		"C:/Program Files/JetBrains/CLion 2020.3.3/bin/cmake/win/share/cmake-3.17/Modules/Platform/Windows-GNU.cmake",
+		"D:/code/CommuteSoftWare/ui/cmake-build-debug/CMakeFiles/3.17.5/CMakeRCCompiler.cmake",
+		"C:/Program Files/JetBrains/CLion 2020.3.3/bin/cmake/win/share/cmake-3.17/Modules/CMakeRCInformation.cmake",
+		"C:/Program Files/JetBrains/CLion 2020.3.3/bin/cmake/win/share/cmake-3.17/Modules/Platform/Windows-windres.cmake",
+		"C:/Program Files/JetBrains/CLion 2020.3.3/bin/cmake/win/share/cmake-3.17/Modules/Platform/Windows-GNU-C-ABI.cmake",
+		"C:/Program Files/JetBrains/CLion 2020.3.3/bin/cmake/win/share/cmake-3.17/Modules/CMakeCommonLanguageInclude.cmake",
+		"C:/Program Files/JetBrains/CLion 2020.3.3/bin/cmake/win/share/cmake-3.17/Modules/CMakeCXXInformation.cmake",
+		"C:/Program Files/JetBrains/CLion 2020.3.3/bin/cmake/win/share/cmake-3.17/Modules/CMakeLanguageInformation.cmake",
+		"C:/Program Files/JetBrains/CLion 2020.3.3/bin/cmake/win/share/cmake-3.17/Modules/Compiler/GNU-CXX.cmake",
+		"C:/Program Files/JetBrains/CLion 2020.3.3/bin/cmake/win/share/cmake-3.17/Modules/Compiler/GNU.cmake",
+		"C:/Program Files/JetBrains/CLion 2020.3.3/bin/cmake/win/share/cmake-3.17/Modules/Platform/Windows-GNU-CXX.cmake",
+		"C:/Program Files/JetBrains/CLion 2020.3.3/bin/cmake/win/share/cmake-3.17/Modules/Platform/Windows-GNU.cmake",
+		"C:/Program Files/JetBrains/CLion 2020.3.3/bin/cmake/win/share/cmake-3.17/Modules/Platform/Windows-GNU-CXX-ABI.cmake",
+		"C:/Program Files/JetBrains/CLion 2020.3.3/bin/cmake/win/share/cmake-3.17/Modules/CMakeCommonLanguageInclude.cmake",
+		"D:/ruanjian/Qt/Qt5.9.0/5.9/mingw53_32/lib/cmake/Qt5Widgets/Qt5WidgetsConfigVersion.cmake",
+		"D:/ruanjian/Qt/Qt5.9.0/5.9/mingw53_32/lib/cmake/Qt5Widgets/Qt5WidgetsConfig.cmake",
+		"D:/ruanjian/Qt/Qt5.9.0/5.9/mingw53_32/lib/cmake/Qt5Gui/Qt5GuiConfigVersion.cmake",
+		"D:/ruanjian/Qt/Qt5.9.0/5.9/mingw53_32/lib/cmake/Qt5Gui/Qt5GuiConfig.cmake",
+		"D:/ruanjian/Qt/Qt5.9.0/5.9/mingw53_32/lib/cmake/Qt5Core/Qt5CoreConfigVersion.cmake",
+		"D:/ruanjian/Qt/Qt5.9.0/5.9/mingw53_32/lib/cmake/Qt5Core/Qt5CoreConfig.cmake",
+		"D:/ruanjian/Qt/Qt5.9.0/5.9/mingw53_32/lib/cmake/Qt5Core/Qt5CoreConfigExtras.cmake",
+		"D:/ruanjian/Qt/Qt5.9.0/5.9/mingw53_32/lib/cmake/Qt5Core/Qt5CoreConfigExtrasMkspecDir.cmake",
+		"D:/ruanjian/Qt/Qt5.9.0/5.9/mingw53_32/lib/cmake/Qt5Core/Qt5CoreMacros.cmake",
+		"C:/Program Files/JetBrains/CLion 2020.3.3/bin/cmake/win/share/cmake-3.17/Modules/CMakeParseArguments.cmake",
+		"D:/ruanjian/Qt/Qt5.9.0/5.9/mingw53_32/lib/cmake/Qt5Gui/Qt5Gui_QGifPlugin.cmake",
+		"D:/ruanjian/Qt/Qt5.9.0/5.9/mingw53_32/lib/cmake/Qt5Gui/Qt5Gui_QICNSPlugin.cmake",
+		"D:/ruanjian/Qt/Qt5.9.0/5.9/mingw53_32/lib/cmake/Qt5Gui/Qt5Gui_QICOPlugin.cmake",
+		"D:/ruanjian/Qt/Qt5.9.0/5.9/mingw53_32/lib/cmake/Qt5Gui/Qt5Gui_QJpegPlugin.cmake",
+		"D:/ruanjian/Qt/Qt5.9.0/5.9/mingw53_32/lib/cmake/Qt5Gui/Qt5Gui_QMinimalIntegrationPlugin.cmake",
+		"D:/ruanjian/Qt/Qt5.9.0/5.9/mingw53_32/lib/cmake/Qt5Gui/Qt5Gui_QOffscreenIntegrationPlugin.cmake",
+		"D:/ruanjian/Qt/Qt5.9.0/5.9/mingw53_32/lib/cmake/Qt5Gui/Qt5Gui_QTgaPlugin.cmake",
+		"D:/ruanjian/Qt/Qt5.9.0/5.9/mingw53_32/lib/cmake/Qt5Gui/Qt5Gui_QTiffPlugin.cmake",
+		"D:/ruanjian/Qt/Qt5.9.0/5.9/mingw53_32/lib/cmake/Qt5Gui/Qt5Gui_QTuioTouchPlugin.cmake",
+		"D:/ruanjian/Qt/Qt5.9.0/5.9/mingw53_32/lib/cmake/Qt5Gui/Qt5Gui_QVirtualKeyboardPlugin.cmake",
+		"D:/ruanjian/Qt/Qt5.9.0/5.9/mingw53_32/lib/cmake/Qt5Gui/Qt5Gui_QWbmpPlugin.cmake",
+		"D:/ruanjian/Qt/Qt5.9.0/5.9/mingw53_32/lib/cmake/Qt5Gui/Qt5Gui_QWebpPlugin.cmake",
+		"D:/ruanjian/Qt/Qt5.9.0/5.9/mingw53_32/lib/cmake/Qt5Gui/Qt5Gui_QWindowsIntegrationPlugin.cmake",
+		"D:/ruanjian/Qt/Qt5.9.0/5.9/mingw53_32/lib/cmake/Qt5Gui/Qt5GuiConfigExtras.cmake",
+		"D:/ruanjian/Qt/Qt5.9.0/5.9/mingw53_32/lib/cmake/Qt5Widgets/Qt5WidgetsConfigExtras.cmake",
+		"D:/ruanjian/Qt/Qt5.9.0/5.9/mingw53_32/lib/cmake/Qt5Widgets/Qt5WidgetsMacros.cmake",
+		"C:/Program Files/JetBrains/CLion 2020.3.3/bin/cmake/win/share/cmake-3.17/Modules/CMakeParseArguments.cmake"
+	],
+	"CMAKE_SOURCE_DIR" : "D:/code/CommuteSoftWare/ui",
+	"DEP_FILE" : "",
+	"DEP_FILE_RULE_NAME" : "",
+	"HEADERS" : 
+	[
+		[
+			"D:/code/CommuteSoftWare/ui/build-qqclient-Desktop_Qt_5_9_0_MinGW_32bit-Debug/debug/moc_predefs.h",
+			"MU",
+			"M675X2AOMG/moc_moc_predefs.cpp"
+		],
+		[
+			"D:/code/CommuteSoftWare/ui/build-qqclient-Desktop_Qt_5_9_0_MinGW_32bit-Debug/ui_cw.h",
+			"MU",
+			"7POLPLAN5N/moc_ui_cw.cpp"
+		],
+		[
+			"D:/code/CommuteSoftWare/ui/build-qqclient-Desktop_Qt_5_9_0_MinGW_32bit-Debug/ui_mainwindow.h",
+			"MU",
+			"7POLPLAN5N/moc_ui_mainwindow.cpp"
+		],
+		[
+			"D:/code/CommuteSoftWare/ui/qqclient/cw.h",
+			"MU",
+			"PSNRKG3O3Z/moc_cw.cpp"
+		],
+		[
+			"D:/code/CommuteSoftWare/ui/qqclient/mainwindow.h",
+			"MU",
+			"PSNRKG3O3Z/moc_mainwindow.cpp"
+		],
+		[
+			"D:/code/CommuteSoftWare/ui/qqclient/message.h",
+			"MU",
+			"PSNRKG3O3Z/moc_message.cpp"
+		],
+		[
+			"D:/code/CommuteSoftWare/ui/qqclient/networksocket.h",
+			"MU",
+			"PSNRKG3O3Z/moc_networksocket.cpp"
+		]
+	],
+	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
+	"INCLUDE_DIR" : "D:/code/CommuteSoftWare/ui/cmake-build-debug/ui_autogen/include",
+	"MOC_COMPILATION_FILE" : "D:/code/CommuteSoftWare/ui/cmake-build-debug/ui_autogen/mocs_compilation.cpp",
+	"MOC_DEFINITIONS" : [ "QT_CORE_LIB", "QT_GUI_LIB", "QT_WIDGETS_LIB" ],
+	"MOC_DEPEND_FILTERS" : 
+	[
+		[
+			"Q_PLUGIN_METADATA",
+			"[\n][ \t]*Q_PLUGIN_METADATA[ \t]*\\([^\\)]*FILE[ \t]*\"([^\"]+)\""
+		]
+	],
+	"MOC_INCLUDES" : 
+	[
+		"D:/code/CommuteSoftWare/ui/cmake-build-debug",
+		"D:/code/CommuteSoftWare/ui",
+		"D:/code/CommuteSoftWare/ui/build-qqclient-Desktop_Qt_5_9_0_MinGW_32bit-Debug",
+		"D:/code/CommuteSoftWare/ui/build-qqclient-Desktop_Qt_5_9_0_MinGW_32bit-Debug/debug",
+		"D:/code/CommuteSoftWare/ui/qqclient",
+		"D:/ruanjian/Qt/Qt5.9.0/5.9/mingw53_32/include",
+		"D:/ruanjian/Qt/Qt5.9.0/5.9/mingw53_32/include/QtWidgets",
+		"D:/ruanjian/Qt/Qt5.9.0/5.9/mingw53_32/include/QtGui",
+		"D:/ruanjian/Qt/Qt5.9.0/5.9/mingw53_32/include/QtANGLE",
+		"D:/ruanjian/Qt/Qt5.9.0/5.9/mingw53_32/include/QtCore",
+		"D:/ruanjian/Qt/Qt5.9.0/5.9/mingw53_32/mkspecs/win32-g++",
+		"C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++",
+		"C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32",
+		"C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward",
+		"C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include",
+		"C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed",
+		"C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/x86_64-w64-mingw32/include"
+	],
+	"MOC_MACRO_NAMES" : [ "Q_OBJECT", "Q_GADGET", "Q_NAMESPACE", "Q_NAMESPACE_EXPORT" ],
+	"MOC_OPTIONS" : [],
+	"MOC_PATH_PREFIX" : false,
+	"MOC_PREDEFS_CMD" : 
+	[
+		"C:/Program Files/mingw-w64/x86_64-8.1.0-posix-seh-rt_v6-rev0/mingw64/bin/g++.exe",
+		"-dM",
+		"-E",
+		"-c",
+		"C:/Program Files/JetBrains/CLion 2020.3.3/bin/cmake/win/share/cmake-3.17/Modules/CMakeCXXCompilerABI.cpp"
+	],
+	"MOC_PREDEFS_FILE" : "D:/code/CommuteSoftWare/ui/cmake-build-debug/ui_autogen/moc_predefs.h",
+	"MOC_RELAXED_MODE" : false,
+	"MOC_SKIP" : [],
+	"MULTI_CONFIG" : false,
+	"PARALLEL" : 4,
+	"PARSE_CACHE_FILE" : "D:/code/CommuteSoftWare/ui/cmake-build-debug/CMakeFiles/ui_autogen.dir/ParseCache.txt",
+	"QT_MOC_EXECUTABLE" : "D:/ruanjian/Qt/Qt5.9.0/5.9/mingw53_32/bin/moc.exe",
+	"QT_UIC_EXECUTABLE" : "D:/ruanjian/Qt/Qt5.9.0/5.9/mingw53_32/bin/uic.exe",
+	"QT_VERSION_MAJOR" : 5,
+	"QT_VERSION_MINOR" : 9,
+	"SETTINGS_FILE" : "D:/code/CommuteSoftWare/ui/cmake-build-debug/CMakeFiles/ui_autogen.dir/AutogenUsed.txt",
+	"SOURCES" : 
+	[
+		[
+			"D:/code/CommuteSoftWare/ui/build-qqclient-Desktop_Qt_5_9_0_MinGW_32bit-Debug/debug/moc_cw.cpp",
+			"MU"
+		],
+		[
+			"D:/code/CommuteSoftWare/ui/build-qqclient-Desktop_Qt_5_9_0_MinGW_32bit-Debug/debug/moc_mainwindow.cpp",
+			"MU"
+		],
+		[
+			"D:/code/CommuteSoftWare/ui/build-qqclient-Desktop_Qt_5_9_0_MinGW_32bit-Debug/debug/moc_networksocket.cpp",
+			"MU"
+		],
+		[ "D:/code/CommuteSoftWare/ui/qqclient/cw.cpp", "MU" ],
+		[ "D:/code/CommuteSoftWare/ui/qqclient/main.cpp", "MU" ],
+		[ "D:/code/CommuteSoftWare/ui/qqclient/mainwindow.cpp", "MU" ],
+		[ "D:/code/CommuteSoftWare/ui/qqclient/message.cpp", "MU" ],
+		[ "D:/code/CommuteSoftWare/ui/qqclient/networksocket.cpp", "MU" ]
+	],
+	"UIC_OPTIONS" : [],
+	"UIC_SEARCH_PATHS" : [],
+	"UIC_SKIP" : [],
+	"UIC_UI_FILES" : [],
+	"VERBOSITY" : 0
+}

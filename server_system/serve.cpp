@@ -22,10 +22,11 @@ int clientServe(SOCKET ClientSocket)
 {
     int iResult;
     int recvbuflen = DEFAULT_BUFLEN;
+    string id;
     message mss;
 
     //Login confirm
-    if(login(ClientSocket, Clients) != 0)
+    if(login(ClientSocket, Clients, id) != 0)
     {
         cout << "Connect close" << endl;
         return 1;
@@ -38,17 +39,21 @@ int clientServe(SOCKET ClientSocket)
         if (iResult > 0) {
             recvms = recvbuf;
             mss.newmessage(recvms);
-            cout << "from " << mss.ori_id << "to " << mss.des_id << endl;
+            cout << "from " << mss.ori_id << " to " << mss.des_id << endl;
             cout << mss.ms << endl;
-        } else if (iResult == 0)
+            Clients.msstransform(mss);
+        } else if (iResult == 0) {
             printf("Connection closing...\n");
+            break;
+        }
         else {
             printf("recv failed: %d\n", WSAGetLastError());
-            return 1;
+            break;
         }
 
     } while (iResult > 0);
 
+    Clients.logout(id);
     return 0;
 }
 
@@ -58,6 +63,7 @@ int main() {
     if(iResult != 0)
     {
         cout << "fail" << endl;
+        return 1;
     }
 
     iResult = Clients.init("client_data.txt");
@@ -114,6 +120,7 @@ int main() {
     SOCKET ClientSocket;
     ClientSocket = INVALID_SOCKET;
 
+    cout << "Server starts." << endl;
 // Accept a client socket
     while(1)
     {

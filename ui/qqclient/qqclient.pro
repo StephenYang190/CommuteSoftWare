@@ -29,14 +29,20 @@ SOURCES += \
         mainwindow.cpp \
     networksocket.cpp \
     cw.cpp \
-    message.cpp
+    message.cpp \
+    chatwindow.cpp \
+    errorshow.cpp
 
 HEADERS += \
         mainwindow.h \
     networksocket.h \
     cw.h \
-    message.h
+    message.h \
+    chatwindow.h \
+    errorshow.h
 
 FORMS += \
         mainwindow.ui \
-    cw.ui
+    cw.ui \
+    chatwindow.ui \
+    errorshow.ui

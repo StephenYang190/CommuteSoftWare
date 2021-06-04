@@ -13,11 +13,10 @@
 
 using namespace std;
 
-int login(SOCKET &ClientSocket, ClioneData &Clients)
+int login(SOCKET &ClientSocket, ClioneData &Clients, string &id)
 {
     int iResult;
     int recvbuflen = DEFAULT_BUFLEN;
-    string id = "";
     while(1)
     {
         message mss;
@@ -67,3 +66,4 @@ int login(SOCKET &ClientSocket, ClioneData &Clients)
 
     return 0;
 }
+

@@ -1,6 +1,6 @@
 #include "networksocket.h"
 #include <iostream>
-#include <string>
+#include <QString>
 #include "message.h"
 
 using namespace std;
@@ -65,59 +65,17 @@ NetworkSocket::NetworkSocket()
     }
 }
 
-int NetworkSocket::Login(std::string account, std::string password)
+int NetworkSocket::Login(QString account, QString password)
 {
     int iresult;
-    string send_str;
+    QString send_str;
     send_str = "0;" + account + ";" + "0;" + password + ";";
-    iresult = send(ConnectSocket, (char *) send_str.data(), (int) send_str.length(), 0);
+    iresult = send(ConnectSocket, (char *) send_str.toStdString().data(), (int) send_str.length(), 0);
     if (iresult == SOCKET_ERROR) {
                 printf("send failed: %d\n", WSAGetLastError());
                 closesocket(ConnectSocket);
                 WSACleanup();
                 return 1;}
-
-    int iResult;
-    int recvbuflen = 512;
-    while(1)
-    {
-        char recvbuf[recvbuflen];
-        string recvms;
-        iResult = recv(ConnectSocket, recvbuf, recvbuflen, 0);
-        recvms = recvbuf;
-        cout << "receive : " << recvms << endl;
-        if (iResult > 0) {
-            message mss;
-            mss.newmessage(recvbuf);
-
-            if(mss.type == "0")
-            {
-                if(mss.ms == "111")
-                {
-                    break;
-                }
-                else
-                {
-                    return 1;
-                }
-            }
-            else
-            {
-                return 1;
-            }
-
-        } else if (iResult == 0)
-        {
-            printf("Connection closing...\n");
-            return 1;
-        }
-        else {
-            printf("recv failed: %d\n", WSAGetLastError());
-            closesocket(ConnectSocket);
-            WSACleanup();
-            return 1;
-        }
-    }
 
     return 0;
 }
@@ -151,12 +109,12 @@ int NetworkSocket::waitack()
         {
             message mss;
             char recvbuf[recvbuflen];
-            string recvms;
+            QString recvms;
             iResult = recv(ConnectSocket, recvbuf, recvbuflen, 0);
             if (iResult > 0) {
                 recvms = recvbuf;
-                cout << "receive : " << recvms << endl;
-                mss.newmessage(recvms);
+                cout << "receive : " << recvms.toStdString() << endl;
+                mss.newmessage(recvms.toStdString());
                 if(mss.type == "3")
                 {
                     break;
@@ -178,46 +136,121 @@ int NetworkSocket::waitack()
         return 0;
 }
 
-int NetworkSocket::receivemss(std::string &str)
+int NetworkSocket::sendmss(QString send_str)
 {
+    return send(ConnectSocket, (char *) send_str.toStdString().data(), (int) send_str.length(), 0);
+}
+
+client::client()
+{
+    sc = new NetworkSocket;
+    workthread = new QThread;
+    rc = new RcMss(sc->ConnectSocket);
+    rc->moveToThread(workthread);
+    QObject::connect(rc, SIGNAL(receivemss(QString )), this, SLOT(MessagePro(QString)));
+    QObject::connect(this, SIGNAL(run()), rc, SLOT(ReadMessage()));
+
+    workthread->start();
+}
+
+client::~client()
+{
+
+}
+
+void client::Login(QString account, QString password)
+{
+    sc->Login(account, password);
+    account_id = account;
+}
+
+void client::SendM(QString send_str) {
+    int iResult;
+    iResult = sc->sendmss(send_str);
+
+    std::cout << iResult << std::endl;
+    if(iResult == 0)
+    {
+        std::cout << "send successfully." << std::endl;
+    } else{
+        std::cout << "send unsuccessfully." << std::endl;
+    }
+}
+
+void client::MessagePro(QString str) {
+    message mss;
+    mss.newmessage(str.toStdString());
+
+    switch(mss.type[0])
+    {
+        case '0':
+        {
+            if(mss.ms == "111")
+            {
+                sc->sendsuccess();
+                emit LoginS(account_id);
+            }
+            else
+            {
+                emit LoginF();
+            }
+
+            break;
+        }
+        case '1':
+        {
+            emit ReadMessage(str);
+            break;
+        }
+        case '2':
+        {
+            if(mss.ms == "1")
+            {
+                emit NewFri(QString::fromStdString(mss.ori_id));
+            }
+            else
+            {
+                emit DropFri(QString::fromStdString(mss.ori_id));
+            }
+            break;
+        }
+        case '3':
+        {
+            break;
+        }
+
+    }
+
+}
+
+void client::start() {
+    emit run();
+}
+
+void RcMss::ReadMessage() {
     int iResult;
     int recvbuflen = 512;
     while(1)
     {
         char recvbuf[recvbuflen];
-        string recvms;
+        QString recvms;
         iResult = recv(ConnectSocket, recvbuf, recvbuflen, 0);
         recvms = recvbuf;
+        std::cout << recvms.toStdString() << std::endl;
         if (iResult > 0) {
-            str = recvms;
-            break;
+            emit receivemss(recvms);
         } else if (iResult == 0)
         {
             printf("Connection closing...\n");
-            return 1;
+            return ;
         }
         else {
             printf("recv failed: %d\n", WSAGetLastError());
             closesocket(ConnectSocket);
             WSACleanup();
-            return 1;
+            return ;
         }
     }
 
-    return 0;
-}
-
-int NetworkSocket::sendmss(std::string send_str)
-{
-    return send(ConnectSocket, (char *) send_str.data(), (int) send_str.length(), 0);
-}
-
-NetworkSocket::NetworkSocket(NetworkSocket &cnn)
-{
-    ConnectSocket = cnn.ConnectSocket;
-}
-
-NetworkSocket::NetworkSocket(SOCKET cnn)
-{
-    ConnectSocket = cnn;
+    return ;
 }

@@ -142,6 +142,33 @@ server_system/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\server_system.dir\build.make CMakeFiles/server_system.dir/build
 .PHONY : server_system/fast
 
+ClioneData.obj: ClioneData.cpp.obj
+
+.PHONY : ClioneData.obj
+
+# target to build an object file
+ClioneData.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\server_system.dir\build.make CMakeFiles/server_system.dir/ClioneData.cpp.obj
+.PHONY : ClioneData.cpp.obj
+
+ClioneData.i: ClioneData.cpp.i
+
+.PHONY : ClioneData.i
+
+# target to preprocess a source file
+ClioneData.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\server_system.dir\build.make CMakeFiles/server_system.dir/ClioneData.cpp.i
+.PHONY : ClioneData.cpp.i
+
+ClioneData.s: ClioneData.cpp.s
+
+.PHONY : ClioneData.s
+
+# target to generate assembly for a file
+ClioneData.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\server_system.dir\build.make CMakeFiles/server_system.dir/ClioneData.cpp.s
+.PHONY : ClioneData.cpp.s
+
 MssPrss.obj: MssPrss.cpp.obj
 
 .PHONY : MssPrss.obj
@@ -168,33 +195,6 @@ MssPrss.s: MssPrss.cpp.s
 MssPrss.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\server_system.dir\build.make CMakeFiles/server_system.dir/MssPrss.cpp.s
 .PHONY : MssPrss.cpp.s
-
-ServerData.obj: ServerData.cpp.obj
-
-.PHONY : ServerData.obj
-
-# target to build an object file
-ServerData.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\server_system.dir\build.make CMakeFiles/server_system.dir/ServerData.cpp.obj
-.PHONY : ServerData.cpp.obj
-
-ServerData.i: ServerData.cpp.i
-
-.PHONY : ServerData.i
-
-# target to preprocess a source file
-ServerData.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\server_system.dir\build.make CMakeFiles/server_system.dir/ServerData.cpp.i
-.PHONY : ServerData.cpp.i
-
-ServerData.s: ServerData.cpp.s
-
-.PHONY : ServerData.s
-
-# target to generate assembly for a file
-ServerData.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\server_system.dir\build.make CMakeFiles/server_system.dir/ServerData.cpp.s
-.PHONY : ServerData.cpp.s
 
 serve.obj: serve.cpp.obj
 
@@ -232,12 +232,12 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... server_system
+	@echo ... ClioneData.obj
+	@echo ... ClioneData.i
+	@echo ... ClioneData.s
 	@echo ... MssPrss.obj
 	@echo ... MssPrss.i
 	@echo ... MssPrss.s
-	@echo ... ServerData.obj
-	@echo ... ServerData.i
-	@echo ... ServerData.s
 	@echo ... serve.obj
 	@echo ... serve.i
 	@echo ... serve.s

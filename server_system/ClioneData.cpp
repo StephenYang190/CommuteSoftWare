@@ -170,20 +170,16 @@ int ClioneData::sendfrnds(string &id) {
             return -1;
         if(clients[frnd].flag)
         {
-            string nwmss = "2;0;0;";
-            nwmss += frnd + ";";
+            string nwmss = "2;";
+            nwmss += clients[n].frnds[i] + ";0;1;";
             send(clients[n].tosocket, (char *)nwmss.data(), nwmss.size(), 0);
+            cout << "send :" << nwmss << endl;
 
-            nwmss = "2;0;0;";
-            nwmss += id + ";";
+            nwmss = "2;" + id + ";0;1;";
             send(clients[frnd].tosocket, (char *)nwmss.data(), nwmss.size(), 0);
             cout << "send :" << nwmss << endl;
-            this->waitack(clients[n].tosocket);
         }
     }
-    send(clients[n].tosocket, "2;1;1;0;", 7, 0);
-    cout << "send :" << "2;1;1;0;" << endl;
-    this->waitack(clients[n].tosocket);
     return 0;
 }
 
@@ -224,14 +220,15 @@ int ClioneData::waitack(SOCKET client) {
 
 int ClioneData::msstransform(message mss) {
     int n = this->find_client(mss.des_id);
+    cout << "n : " << n << endl;
     if(n == -1)
         return -1;
 
-    string nwmss = "2;";
+    string nwmss = "1;";
     nwmss += mss.ori_id + ";";
     nwmss += mss.des_id + ";";
     nwmss += mss.ms + ";";
     send(clients[n].tosocket, (char *)nwmss.data(), nwmss.size(), 0);
-    this->waitack(clients[n].tosocket);
+    cout << nwmss.data() << endl;
     return 0;
 }

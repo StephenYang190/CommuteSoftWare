@@ -6,36 +6,40 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>640</width>
-    <height>480</height>
+    <width>281</width>
+    <height>516</height>
    </rect>
   </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>PP</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QWidget" name="horizontalLayoutWidget">
+   <widget class="QWidget" name="verticalLayoutWidget">
     <property name="geometry">
      <rect>
       <x>0</x>
       <y>0</y>
-      <width>641</width>
-      <height>431</height>
+      <width>281</width>
+      <height>471</height>
      </rect>
     </property>
-    <layout class="QHBoxLayout" name="horizontalLayout">
+    <layout class="QVBoxLayout" name="verticalLayout">
      <item>
-      <widget class="QListWidget" name="frilist"/>
-     </item>
-     <item>
-      <layout class="QVBoxLayout" name="verticalLayout">
+      <layout class="QHBoxLayout" name="horizontalLayout">
        <item>
-        <widget class="QPlainTextEdit" name="mssview"/>
+        <widget class="QLabel" name="personalID">
+         <property name="text">
+          <string>TextLabel</string>
+         </property>
+        </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="msssend"/>
+        <widget class="QLineEdit" name="SendF"/>
        </item>
       </layout>
+     </item>
+     <item>
+      <widget class="QListWidget" name="frilist"/>
      </item>
     </layout>
    </widget>
@@ -45,7 +49,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>640</width>
+     <width>281</width>
      <height>23</height>
     </rect>
    </property>

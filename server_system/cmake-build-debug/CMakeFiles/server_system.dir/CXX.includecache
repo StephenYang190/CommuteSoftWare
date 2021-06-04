@@ -6,14 +6,6 @@
 
 #IncludeRegexTransform: 
 
-D:/code/CommuteSoftWare/server_system/ClioneData.cpp
-ClioneData.h
-D:/code/CommuteSoftWare/server_system/ClioneData.h
-iostream
--
-fstream
--
-
 D:/code/CommuteSoftWare/server_system/ClioneData.h
 string
 -
@@ -29,18 +21,6 @@ stdio.h
 -
 vector
 -
-
-D:/code/CommuteSoftWare/server_system/MssPrss.cpp
-winsock2.h
--
-ws2tcpip.h
--
-iostream
--
-thread
--
-ClioneData.h
-D:/code/CommuteSoftWare/server_system/ClioneData.h
 
 D:/code/CommuteSoftWare/server_system/MssPrss.h
 

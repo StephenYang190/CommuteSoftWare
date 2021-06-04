@@ -1,0 +1,40 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+D:/code/CommuteSoftWare/server_system/ClioneData.h
+string
+-
+winsock2.h
+-
+windows.h
+-
+ws2tcpip.h
+-
+stdlib.h
+-
+stdio.h
+-
+vector
+-
+
+D:/code/CommuteSoftWare/server_system/MssPrss.h
+
+D:/code/CommuteSoftWare/server_system/serve.cpp
+winsock2.h
+-
+ws2tcpip.h
+-
+iostream
+-
+thread
+-
+ClioneData.h
+D:/code/CommuteSoftWare/server_system/ClioneData.h
+MssPrss.h
+D:/code/CommuteSoftWare/server_system/MssPrss.h
+

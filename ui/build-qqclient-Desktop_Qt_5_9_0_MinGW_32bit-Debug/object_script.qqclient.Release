@@ -2,11 +2,13 @@ INPUT(
 ./release\main.o
 ./release\mainwindow.o
 ./release\networksocket.o
-./release\commutewindow.o
-./release\commutewindow.o
 ./release\cw.o
+./release\message.o
+./release\chatwindow.o
+./release\errorshow.o
 ./release\moc_mainwindow.o
 ./release\moc_networksocket.o
-./release\moc_commutewindow.o
 ./release\moc_cw.o
+./release\moc_chatwindow.o
+./release\moc_errorshow.o
 );
